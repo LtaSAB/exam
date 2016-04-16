@@ -1,0 +1,42 @@
+.flexslider {
+  padding: 200px 0 250px;
+  border: 0;
+  background-color: transparent;
+  margin: 0 0 50px ;
+  color: white;
+  .welcome, h2 {
+    text-transform: uppercase;
+    font-family: $heading-font;
+  }
+  .welcome {
+  font-size: 16px;
+}
+  h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .slider-excerpt {
+    max-width: 550px;
+    font-family: $decorative-font;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .flex-control-paging{
+    li {
+      a.flex-active {
+        background-color: #ffaf36;
+      }
+      a {
+        background-color: #8f8f8f;
+        border-radius: 0;
+        height: 4px;
+        width: 25px;
+      }
+    }
+  }
+  .flex-direction-nav {
+    display: none;
+  }
+
+}

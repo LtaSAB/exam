@@ -1,0 +1,32 @@
+.wpcf7 {
+  p {
+    margin: 0;
+  }
+ input, textarea {
+   border: 1px solid #373839;
+   background-color: transparent;
+   outline: none;
+   padding: 15px 20px;
+ }
+  input[type='text'] {
+    float: left;
+    width: 50%;
+  }
+  input[type='email'] {
+    float: right;
+    width: 50%;
+  }
+  textarea {
+    border-top: none;
+  }
+  input[type='submit'] {
+    border: 2px solid #ffaf36;
+    background-color: transparent;
+    color: #ffaf36;
+    font-family: $heading-font;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}

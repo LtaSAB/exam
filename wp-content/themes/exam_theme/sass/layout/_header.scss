@@ -1,0 +1,57 @@
+.site-header {
+  background: rgba(0,0,0,1) url(../img/slider-person.png) no-repeat center;
+  @include prefix(background-size,cover, o moz ms webkit);
+
+
+}
+.site-header.page-header {
+  background: rgba(0,0,0,1) url(../img/layer-19.png) no-repeat center;
+  @include prefix(background-size,cover, o moz ms webkit);
+  margin: 0;
+  height: 400px;
+}
+
+.header-zone {
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  a {
+    color: white;
+  }
+}
+.site_telephone{
+  padding: 25px 0;
+
+  &:before {
+    content: '';
+    background: url(../img/phone_icon.png) no-repeat;
+   display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+.main-navigation {
+  padding: 25px 0;
+  li {
+    float: right;
+    a {
+      padding: 0 20px;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    &.current-menu-item {
+      a {
+        color: #ffaf36;
+      }
+    }
+  }
+}
+.site-title {
+    margin: 10px 0;
+  border-right: 1px solid rgba(255,255,255,0.15);
+
+}

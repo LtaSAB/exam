@@ -1,0 +1,63 @@
+.social-icons {
+  text-align: center;
+  display: inline-block;
+  li {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+    a {
+      display: block;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: relative;
+
+      span {
+        &:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+      }
+      &:hover {
+        &:before {
+          color: darkorange;
+        }
+      }
+    }
+    a[href*="facebook"] {
+      background-color: #496fa5;
+    }
+    a[href*="twitter"] {
+      background-color: #00baef;
+    }
+    a[href*="google"] {
+      background-color: #eb4125;
+    }
+  }
+}
+.site-footer {
+  .social-icons {
+    display: block;
+    text-align: left;
+    margin-top: 35px;
+    li {
+      a {
+        background-color: transparent;
+        border: 1px solid #373839;
+        border-radius: 0;
+        width: 30px;
+        height: 30px;
+        span {
+          &:before {
+            color: #8a8a8a;
+          }
+        }
+      }
+    }
+  }
+
+}

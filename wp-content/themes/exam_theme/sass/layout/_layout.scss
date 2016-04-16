@@ -1,0 +1,67 @@
+@import '../utils/_variables',
+'../utils/_mixins';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,800,600);
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,700italic);
+
+/* ie hack
+don't remove that style*/
+.m-page {
+  display: block;
+}
+
+.container-fluid {
+  min-width: $min-width;
+  max-width: $max-width;
+}
+
+.container-fluid:before, .container-fluid:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.container-fluid:after,
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+body {
+  font-size: $main-font-size;
+  font-family: $main-font;
+}
+.wrapper {
+  overflow: hidden;
+  min-width: $min-width;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+h2, h3  {
+  font-family: $main-font;
+  margin: 0;
+}
+h2 {
+  font-weight: $h2-font-weight;
+}
+a {
+  color: inherit;
+  outline: none;
+
+}
+
+.title-decorative{
+  color: #1c1c1c;
+  font-family: $decorative-font;
+  font-size: 16px;
+  font-style: italic;
+}

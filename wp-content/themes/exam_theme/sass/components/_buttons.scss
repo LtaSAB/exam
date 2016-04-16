@@ -1,0 +1,28 @@
+@import '../utils/_variables';
+.button {
+
+}
+.button.read-more {
+  display: inline-block;
+  color: #ffaf36;
+  font-family: $heading-font;
+  font-size: 13px;
+  font-weight: 700;
+  width: 150px;
+  text-transform: uppercase;
+  border: 2px solid #ffaf36;
+  padding: 15px 30px;
+  margin: 20px auto;
+  text-align: center;
+}
+.our-services {
+  .button.read-more {
+    margin: 70px 0 100px;
+  }
+}
+.flexslider {
+  .button.read-more {
+    color: #1c1c1c;
+    background-color: #ffaf36;
+  }
+}
